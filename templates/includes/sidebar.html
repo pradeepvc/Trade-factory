@@ -1,0 +1,186 @@
+<div class="sidebar sidebar-style-2" data-background-color="dark2">
+		<div class="sidebar-wrapper scrollbar scrollbar-inner">
+			<div class="sidebar-content">
+				<ul class="nav nav-primary">
+					<li class="nav-item {% if 'index' in segment %} active {% endif %}">
+						<a data-toggle="collapse" href="#dashboard" class="collapsed" aria-expanded="false">
+							<i class="fas fa-home"></i>
+							<p>Dashboard</p>
+							<span class="caret"></span>
+						</a>
+						<div class="collapse" id="dashboard">
+							<ul class="nav nav-collapse">
+								<li>
+									<a href="/">
+										<span class="sub-item">Dashboard</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+
+					<li class="nav-item {% if 'forms' in segment %} active {% endif %}">
+						<a data-toggle="collapse" href="#base">
+							<i class="fas fa-users"></i>
+							<p>Users</p>
+							<span class="caret"></span>
+						</a>
+						<div class="collapse" id="base">
+							<ul class="nav nav-collapse">
+								<li>
+									<a href="/users">
+										<span class="sub-item">Users</span>
+									</a>
+								</li>
+								<li>
+									<a href="/form">
+										<span class="sub-item">Add User</span>
+									</a>
+								</li>
+								<li>
+									<a href="/autologin">
+										<span class="sub-item">Autologins</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item {% if 'layout' in segment %} active {% endif %}">
+						<a data-toggle="collapse" href="#sidebarLayouts">
+							<i class="fas fa-cog"></i>
+							<p>Settings</p>
+							<span class="caret"></span>
+						</a>
+						<div class="collapse" id="sidebarLayouts">
+							<ul class="nav nav-collapse">
+								<li>
+									<a href="/default_config">
+										<span class="sub-item">Default Configs</span>
+									</a>
+								</li>
+								<li>
+									<a href="/config">
+										<span class="sub-item">User Configs</span>
+									</a>
+								</li>
+								<li>
+									<a href="/running_config">
+										<span class="sub-item">Running Config</span>
+									</a>
+								</li>
+
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a data-toggle="collapse" href="#forms">
+							<i class="fas fa-pencil-ruler"></i>
+							<p>Semi-Auto Trade</p>
+							<span class="caret"></span>
+						</a>
+						<div class="collapse" id="forms">
+							<ul class="nav nav-collapse">
+								<li>
+									<a href="/switch">
+										<span class="sub-item">Switch Trade</span>
+									</a>
+								</li>
+								<li>
+									<a href="/close">
+										<span class="sub-item">Close trade</span>
+									</a>
+								</li>
+								<li>
+									<a href="/">
+										<span class="sub-item">Manual trade</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a data-toggle="collapse" href="#tables">
+							<i class="fas fa-table"></i>
+							<p>Order Book</p>
+							<span class="caret"></span>
+						</a>
+						<div class="collapse" id="tables">
+							<ul class="nav nav-collapse">
+								<li>
+									<a href="/openposition">
+										<span class="sub-item">Open Position</span>
+									</a>
+								</li>
+								<li>
+									<a href="/m2m">
+										<span class="sub-item">M2M</span>
+									</a>
+								</li>
+								<li>
+									<a href="/balance">
+										<span class="sub-item">Funds Available</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+
+					<li class="nav-item {% if 'charts' in segment %} active {% endif %}">
+						<a data-toggle="collapse" href="#charts">
+							<i class="fas fa-bars"></i>
+							<p>Logs</p>
+							<span class="caret"></span>
+						</a>
+						<div class="collapse" id="charts">
+							<ul class="nav nav-collapse">
+								<li>
+									<a href="/">
+										<span class="sub-item">Autologin Logs</span>
+									</a>
+								</li>
+								<li>
+									<a href="/">
+										<span class="sub-item">Order Logs</span>
+									</a>
+								</li>
+								<li>
+									<a href="/">
+										<span class="sub-item">All Logs</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a data-toggle="collapse" href="#submenu">
+							<i class="far fa-chart-bar"></i>
+							<p>Analysis</p>
+							<span class="caret"></span>
+						</a>
+						<div class="collapse" id="submenu">
+							<ul class="nav nav-collapse">
+								<li>
+									<a href="/">
+										<span class="sub-item">Daily</span>
+									</a>
+								</li>
+								<li>
+									<a href="/">
+										<span class="sub-item">Monthly</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+
+					<li class="nav-item {% if 'widgets' in segment %} active {% endif %}">
+						<a href="/">
+							<i class="fab fa-readme"></i>
+							<p>Documentation</p>
+						</a>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+	</div>

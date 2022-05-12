@@ -1,0 +1,83 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Users {% endblock %}
+
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+	<div class="content">
+		<div class="page-inner">
+			<div class="page-header">
+				<h4 class="page-title">Users</h4>
+				<ul class="breadcrumbs">
+					<li class="nav-home">
+						<a href="/">
+							<i class="flaticon-home"></i>
+						</a>
+					</li>
+					<li class="separator">
+						<i class="flaticon-right-arrow"></i>
+					</li>
+					<li class="nav-item">
+						<a href="/table-data.html">Users</a>
+					</li>
+					<li class="separator">
+						<i class="flaticon-right-arrow"></i>
+					</li>
+					<li class="nav-item">
+						<a href="">Users</a>
+					</li>
+				</ul>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="card">
+						<div class="card-header">
+							<div class="d-flex align-items-center">
+								<h4 class="card-title">Users</h4>
+							</div>
+						</div>
+						<div class="card-body">
+							<div class="table-responsive">
+								<table id="add-row" class="display table table-striped table-hover" >
+									<thead>
+										<tr>
+											<th>ID</th>
+											<th>User ID</th>
+											<th>Name</th>
+											<th style="width: 10%">Action</th>
+										</tr>
+									</thead>
+									<tbody>
+										{% for user in users %}
+											<tr
+											{% if loop.index %2==0 %}
+											{% else %}
+											{% endif %}
+											>
+											<td>{{ loop.index }}</td>
+											<td>{{user.user_id}}</td>
+											<td>{{user.name}}</td>
+											<td>
+											<span style="font-size: 24px;color:green;">
+											<a href="/{{user.id}}/edit"> <i class="fas fa-edit" ></i></a> </span>
+											| <span style="font-size: 24px;color:red;">
+											<a href="/{{user.id}}/delete"> <i class="fas fa-trash-alt"></i></a>
+											</span>
+
+											</td>
+										</tr>
+									{% endfor %}
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+{% endblock content %}
+

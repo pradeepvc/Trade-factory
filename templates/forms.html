@@ -1,0 +1,125 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Add User {% endblock %}
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+	<div class="content">
+		<div class="page-inner">
+			<div class="page-header">
+				<h4 class="page-title">Add Users</h4>
+				<ul class="breadcrumbs">
+					<li class="nav-home">
+						<a href="#">
+							<i class="flaticon-home"></i>
+						</a>
+					</li>
+					<li class="separator">
+						<i class="flaticon-right-arrow"></i>
+					</li>
+					<li class="nav-item">
+						<a href="">Users</a>
+					</li>
+					<li class="separator">
+						<i class="flaticon-right-arrow"></i>
+					</li>
+					<li class="nav-item">
+						<a href="">Add Users</a>
+					</li>
+				</ul>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="card">
+						<div class="card-header">
+							<div class="card-title">Add Users</div>
+						</div>
+
+						<form action='' method = "POST">
+						<div class="card-body">
+							<div class="row">
+								<div class="col-md-6 col-lg-4">
+
+							<div class="form-group">
+							<tr>
+							<label>User ID</label>
+							<td><input type = "text" name = "user_id" class="form-control" /></td>
+							</tr>
+							</div>
+
+
+							<div class="form-group">
+							<tr>
+							<label>NAME</label>
+							<td><input type = "text" name = "name" class="form-control" /></td>
+							</tr>
+							</div>
+
+
+							<div class="form-group" >
+							<tr>
+							<label>Password</label>
+							<td><input type = "text" name = "password" class="form-control" /></td>
+							</tr>
+							</div>
+
+
+								</div>
+								<div class="col-md-6 col-lg-4">
+									<div class="form-group">
+										<tr>
+										<label >API KEY</label>
+										<td><input type = "text" name = "api_key" class="form-control" /></td>
+										</tr>
+									</div>
+									<div class="form-group">
+										<tr>
+										<label>API SECRET KEY</label>
+										<td><input type = "text" name = "api_secret_key" class="form-control" /></td>
+										</tr>
+									</div>
+									<div class="form-group">
+										<tr>
+										<label>TOTP KEY</label>
+										<td><input type = "text" name = "totp_key" class="form-control" /></td>
+										</tr>
+									</div>
+
+								</div>
+								<div class="col-md-6 col-lg-4">
+									<div class="form-group">
+										<tr>
+										<label>AUTOLOGIN</label>
+										<td>
+										<select name="autologin_status" class="form-control">
+										<option value="YES">YES</option>
+										<option value="NO">NO</option>
+										</select>
+										</td>
+										</tr>
+									</div>
+						</div>
+						<div class="card-action">
+							<tr>
+								<td colspan="3">
+									<button class="btn btn-secondary">Submit</button>
+									<button class="btn btn-secondary">Cancel</button>
+								</td>
+								</tr>
+						</div>
+					</div>
+				</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+{% endblock content %}
+
+{% block javascripts %}
+
+{% endblock javascripts %}	

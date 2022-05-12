@@ -1,0 +1,149 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Running Config {% endblock %}
+
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+	<div class="content">
+		<div class="page-inner">
+			<div class="page-header">
+				<h4 class="page-title">Configs</h4>
+				<ul class="breadcrumbs">
+					<li class="nav-home">
+						<a href="">
+							<i class="flaticon-home"></i>
+						</a>
+					</li>
+					<li class="separator">
+						<i class="flaticon-right-arrow"></i>
+					</li>
+					<li class="nav-item">
+						<a href="">Default Config</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+<div class="row">
+				<div class="col-md-6">
+					<div class="card">
+						<div class="card-body">
+							<table class="table mt-3">
+								<thead>
+									<tr>
+										<th scope="col">Signal</th>
+										<th scope="col">SYMBOL</th>
+										<th scope="col">EXPIRY</th>
+										<th scope="col">TYPE</th>
+
+
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>BUY</td>
+										<td>BANK NIFTY</td>
+										<div class="form-group">
+										<td><input type = "text" name = "totp_key" class="form-control" /></td>
+										</div>
+										<td>PE</td>
+									</tr>
+									<tr>
+										<td>BUY</td>
+										<td>NIFTY</td>
+										<div class="form-group">
+										<td><input type = "text" name = "totp_key" class="form-control" /></td>
+										</div>
+										<td>PE</td>
+									</tr>
+									<tr>
+										<td>SELL</td>
+										<td>BANK NIFTY</td>
+										<div class="form-group">
+										<td><input type = "text" name = "totp_key" class="form-control" /></td>
+										</div>
+										<td>CE</td>
+
+									</tr>
+									<tr>
+										<td>SELL</td>
+										<td>NIFTY</td>
+										<div class="form-group">
+										<td><input type = "text" name = "totp_key" class="form-control" /></td>
+										</div>
+										<td>CE</td>
+
+									</tr>
+								</tbody>
+							</table>
+							<button class="btn btn-secondary">Apply All</button>
+						</div>
+					</div>
+
+
+					<div class="card">
+						<div class="card-body">
+							<table class="table mt-3">
+								<thead>
+									<tr>
+										<th scope="col">AUTOSWITCH </th>
+										<th scope="col">PREMIUM</th>
+
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>NIFTY </td>
+										<div class="form-group">
+										<td><input placeholder="-20"  type = "text" name = "totp_key" class="form-control" /></td>
+										</div>
+
+									</tr>
+									<tr>
+										<td>BANKNIFTY</td>
+										<div class="form-group">
+										<td><input placeholder="-60"  type = "text" name = "totp_key" class="form-control" /></td>
+										</div>
+
+									</tr>
+
+								</tbody>
+							</table>
+							<button class="btn btn-secondary">Apply All</button>
+						</div>
+					</div>
+				</div>
+			<div class="col-md-6">
+					<div class="card">
+						<div class="card-body">
+							<table class="table mt-3">
+								<thead>
+									<tr>
+										<th scope="col">MAX NIFTY QTY PER TRADE</th>
+										<th scope="col">MAX BANK NIFTY QTY PER TRADE</th>
+
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<div class="form-group">
+										<td><input placeholder="1750"  type = "text" name = "totp_key" class="form-control" /></td>
+										</div>
+										<div class="form-group">
+										<td><input placeholder="1200"  type = "text" name = "totp_key" class="form-control" /></td>
+										</div>
+									</tr>
+								</tbody>
+							</table>
+							<button class="btn btn-secondary">Apply All</button>
+						</div>
+					</div>
+				</div>
+					</div>
+				</div>
+			</div>
+
+
+{% endblock content %}
+
