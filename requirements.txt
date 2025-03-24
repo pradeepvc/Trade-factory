@@ -7,5 +7,5 @@ numpy
 kiteconnect
 selenium
 chromedriver_autoinstaller
-pyotp
 boto3
+pyotp
